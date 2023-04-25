@@ -1,0 +1,753 @@
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.bgw {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,#01447b, #04050a);
+}
+
+    section.bgw::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(to top, #110422, #2a0a5510);
+        z-index: 1000;
+    }
+
+    section.bgw img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+
+        section.bgw img#stars {
+            animation: run 5s linear infinite;
+        }
+
+    section.bgw h1 {
+        z-index: 1000;
+        font-size: 6em;
+        color: #fff;
+        text-align: center;
+    }
+
+        section.bgw h1 span {
+            font-size: 25px;
+            font-style: italic;
+        }
+
+section.afterbg {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+    section.afterbg h1 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-size: 5em;
+        color: #000;
+    }
+
+
+        section.afterbg h1::before {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: -50%;
+            width: 100px;
+            height: 100px;
+            background: url('imgs/rocket.png');
+            background-size: 100px;
+            transform: rotate(265deg);
+            z-index: 1000;
+        }
+
+        section.afterbg h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10;
+            right: -50%;
+            width: 100px;
+            height: 100px;
+            background: url('imgs/problem.png');
+            background-size: 100px;
+            transform: rotate(10deg);
+            z-index: 1000;
+        }
+/* Sowwyz#1337 */
+@keyframes run {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* Sowwyz#1337 */
+
+.arrow-down {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    background: rgba(1, 68, 123, 0.74);
+    color: #fff;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.aboutme {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    transition: 1.5s;
+}
+
+    /* Sowwyz#1337 */
+
+    .aboutme img {
+        margin-right: 5%;
+        border-radius: 50%;
+        box-shadow: 20px 15px 45px -15px rgba(66, 68, 90, 1);
+        animation: avatar 3s infinite;
+    }
+
+section.contacts {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+}
+
+    section.contacts h1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-size: 2.5em;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+h1[animation="big"],
+h1[animation="small"] {
+    transition: 0.5s;
+}
+
+    h1[animation="big"]:hover {
+        font-size: 5.5em;
+    }
+
+    h1[animation="small"]:hover {
+        font-size: 3em;
+    }
+
+section.contacts h1::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -50%;
+    width: 100px;
+    height: 100px;
+    background: url('imgs/customer-service.png');
+    background-size: 100px;
+    transform: rotate(-15deg);
+    z-index: 1000;
+}
+
+section.contacts h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    width: 100px;
+    height: 100px;
+    background: url('imgs/contact.png');
+    background-size: 100px;
+    transform: rotate(10deg);
+    z-index: 1000;
+}
+
+section.contacts .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    section.contacts .container .box {
+        position: relative;
+        width: 350px;
+        padding: 20px;
+        margin: 20px;
+        background: #d1d1d1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        margin-top: 5%;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 20px 15px 45px -15px rgba(66, 68, 90, 1);
+    }
+
+        section.contacts .container .box .icon img {
+            position: relative;
+            width: 70px;
+            margin-right: 25px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        section.contacts .container .box h2 {
+            font-size: 1.2em;
+        }
+
+        section.contacts .container .box:hover {
+            transform: translateY(-25px);
+            background: #c5c5c5;
+        }
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+
+@keyframes avatar {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(2.5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+section.orders {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+    section.orders h1 {
+        position: absolute;
+        left: 50%;
+        margin-top: -5%;
+        transform: translate(-50%, 0%);
+        font-size: 2.5em;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    section.orders h3 {
+        position: relative;
+        text-align: center;
+        color: rgb(196, 0, 0);
+        font-size: 5em;
+        margin-top: 150px;
+        background: rgba(255, 0, 0, 0.205);
+        border: 4px solid #f00;
+        border-left: none;
+        border-right: none;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+        section.orders h3::before {
+            content: '';
+            position: absolute;
+            display: flex;
+            width: 400px;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.322));
+            opacity: 0.5;
+            animation: soon 4s linear infinite;
+            z-index: -1;
+        }
+
+        section.orders h3::after {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            opacity: 0.5;
+            content: url('imgs/bob2.gif');
+        }
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    section.orders p {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+        section.orders p::before {
+            background-image: url('/imgs/warn.png');
+            background-size: 15px 15px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            content: "";
+        }
+
+    section.orders h1::before {
+        content: '';
+        position: absolute;
+        bottom: -45px;
+        left: -35%;
+        width: 100px;
+        height: 100px;
+        background: url('imgs/insurance.png');
+        background-size: 100px;
+        transform: rotate(-5deg);
+        z-index: 1000;
+    }
+
+    section.orders h1::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        right: -35%;
+        width: 100px;
+        height: 100px;
+        background: url('imgs/secured.png');
+        background-size: 100px;
+        transform: rotate(5deg);
+        z-index: 1000;
+    }
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+@keyframes soon {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+section.footer {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+}
+
+    section.footer h1 {
+        font-size: 1.25em;
+        color: #000;
+        text-align: center;
+    }
+
+    section.footer p {
+        font-size: 1em;
+        color: #000;
+        text-align: center;
+    }
+
+.focus {
+    transform: translateY(-30px);
+}
+/* Sowwyz#1337 */
+@media only screen and (max-width: 600px) {
+    section.afterbg h1 {
+        font-size: 2.5em;
+    }
+
+        section.afterbg h1::before, section.afterbg h1::after {
+            background-size: 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+    h1[animation="big"]:hover {
+        font-size: 3.5em;
+    }
+
+    h1[animation="small"]:hover {
+        font-size: 2.5em;
+    }
+
+    .aboutme {
+        margin-top: 30%;
+    }
+
+    section.contacts {
+        height: 20%;
+    }
+
+        section.contacts .container .box {
+            margin-top: 15%;
+        }
+
+        section.contacts h1 {
+            font-size: 2em;
+        }
+
+
+            section.contacts h1::before, section.contacts h1::after {
+                background-size: 50px;
+                width: 50px;
+                height: 50px;
+            }
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    section.orders {
+        height: 25vh;
+    }
+
+        section.orders h1 {
+            font-size: 2em;
+        }
+
+            section.orders h1::before, section.orders h1::after {
+                background-size: 75px;
+                width: 75px;
+                height: 75px;
+            }
+
+        section.orders h3::after {
+            left: -5%;
+            opacity: 0.5;
+        }
+}
+
+/* Sowwyz#1337 */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    section.afterbg h1 {
+        font-size: 2.5em;
+    }
+        /* Sowwyz#1337 */
+
+        section.afterbg h1::before, section.afterbg h1::after {
+            background-size: 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+    h1[animation="big"]:hover {
+        font-size: 3.5em;
+    }
+
+    h1[animation="small"]:hover {
+        font-size: 2.5em;
+    }
+
+    .aboutme {
+        margin-top: 30%;
+    }
+
+    section.contacts {
+        height: 20%;
+    }
+        /* Sowwyz#1337 */
+
+        section.contacts .container .box {
+            margin-top: 15%;
+        }
+
+        section.contacts h1 {
+            font-size: 2em;
+        }
+
+
+            section.contacts h1::before, section.contacts h1::after {
+                background-size: 50px;
+                width: 50px;
+                height: 50px;
+            }
+    /* Sowwyz#1337 */
+    section.orders {
+        height: 25vh;
+    }
+
+        section.orders h1 {
+            font-size: 2em;
+        }
+
+            section.orders h1::before, section.orders h1::after {
+                background-size: 75px;
+                width: 75px;
+                height: 75px;
+            }
+
+        section.orders h3::after {
+            left: -5%;
+            opacity: 0.5;
+        }
+}
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    section.afterbg h1 {
+        font-size: 2.5em;
+    }
+        /* Sowwyz#1337 */
+        section.afterbg h1::before, section.afterbg h1::after {
+            background-size: 50px;
+            width: 50px;
+            height: 50px;
+        }
+
+    h1[animation="big"]:hover {
+        font-size: 3.5em;
+    }
+
+    h1[animation="small"]:hover {
+        font-size: 2.5em;
+    }
+    /* Sowwyz#1337 */
+    .aboutme {
+        margin-top: 30%;
+    }
+    /* Sowwyz#1337 */
+    section.contacts {
+        height: 20%;
+    }
+
+        section.contacts .container .box {
+            margin-top: 15%;
+        }
+
+        section.contacts h1 {
+            font-size: 2em;
+        }
+            /* Sowwyz#1337 */
+
+
+            section.contacts h1::before, section.contacts h1::after {
+                background-size: 50px;
+                width: 50px;
+                height: 50px;
+            }
+    /* Sowwyz#1337 */
+
+    section.orders {
+        height: 25vh;
+    }
+
+        section.orders h1 {
+            font-size: 2em;
+        }
+
+            section.orders h1::before, section.orders h1::after {
+                background-size: 75px;
+                width: 75px;
+                height: 75px;
+            }
+
+        section.orders h3::after {
+            left: -5%;
+            opacity: 0.5;
+        }
+    /* Sowwyz#1337 */
+}
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    section.afterbg h1 {
+        font-size: 3em;
+    }
+        /* Sowwyz#1337 */
+        section.afterbg h1::before, section.afterbg h1::after {
+            background-size: 50px;
+            width: 50px;
+            height: 50px;
+        }
+    /* Sowwyz#1337 */
+    h1[animation="big"]:hover {
+        font-size: 3.5em;
+    }
+    /* Sowwyz#1337 */
+    h1[animation="small"]:hover {
+        font-size: 2.5em;
+    }
+    /* Sowwyz#1337 */
+    .aboutme {
+        margin-top: 10%;
+    }
+    /* Sowwyz#1337 */
+    section.contacts h1 {
+        font-size: 2em;
+    }
+        /* Sowwyz#1337 */
+        section.contacts h1::before, section.contacts h1::after {
+            background-size: 50px;
+            width: 50px;
+            height: 50px;
+        }
+    /* Sowwyz#1337 */
+    section.contacts .container .box {
+        margin-top: 10%;
+    }
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    section.contacts {
+        height: 50%;
+    }
+
+    section.orders h1 {
+        font-size: 2em;
+    }
+
+        section.orders h1::before, section.orders h1::after {
+            background-size: 75px;
+            width: 75px;
+            height: 75px;
+        }
+
+    section.orders h3::after {
+        left: -5%;
+        opacity: 0.5;
+    }
+}
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+
+/* Sowwyz#1337 */
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+    section.contacts .container .box {
+        margin-top: 10%;
+    }
+
+    section.contacts {
+        height: 40%;
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,#1b1b1b, #04050a);
+    z-index: 1500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* Sowwyz#1337 */
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-color: #414141 #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    /* Sowwyz#1337 */
+    .spinner::before,
+    .spinner::after {
+        content: "";
+        grid-area: 1/1;
+        margin: 2px;
+        border: inherit;
+        border-radius: 50%;
+    }
+    /* Sowwyz#1337 */
+    .spinner::before {
+        border-color: #5512ff #0000;
+        animation: inherit;
+        animation-duration: 0.5s;
+        animation-direction: reverse;
+    }
+
+    .spinner::after {
+        margin: 8px;
+    }
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
+/* Sowwyz#1337 */
